@@ -1,0 +1,62 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+
+        <!-- blog-details-area -->
+        <section class="blog__details-area section-py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="blog__details-thumb">
+                            <img src="{{object.image.url}}" alt="img">
+                        </div>
+                        <div class="blog__details-content">
+                            <div class="blog__post-meta">
+                                <ul class="list-wrap">
+                                    <li>{{object.date}}</li>
+                                </ul>
+                            </div>
+                            <h2 class="title">{{object.title}}</h2>
+                            <p>{{object.description|safe}}</p>
+                          
+                        </div>
+                        
+                      
+                    </div>
+                    <div class="col-lg-4">
+                        <aside class="blog__sidebar">
+                            
+                            <div class="blog__widget">
+                                <h4 class="blog__widget-title">Recent Posts</h4>
+                                <div class="blog__cat-list">
+                                    <ul class="list-wrap">
+                                        {% for item in updates %}
+                                        <li>
+                                            <a href="blog.html">{{item.title}}
+                                                <span><i class="renova-right-arrow"></i> <strong>{{item.id}}</strong></span>
+                                            </a>
+                                        </li>
+                                        {% endfor %}
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog-details-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+{% endblock %}

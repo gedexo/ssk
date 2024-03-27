@@ -1,0 +1,81 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Renova - Construction Building & Renovation Template</title>
+    <meta name="description" content="Renova - Construction Building & Renovation Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/img/favicon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/default-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/odometer.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/tg-cursor.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/main.css' %}">
+</head>
+
+<body>
+
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="{% static 'web/img/logo/preloader.png' %}" alt="Preloader"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="renova-up-arrow"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+
+    {% include "web/partials/header.html" %}
+    {% block content %}
+    {% endblock %}
+    {% include "web/partials/footer.html" %}
+
+
+   <!-- JS here -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.3/dist/sweetalert2.all.min.js"></script>
+   <script src="{% static 'web/js/vendor/jquery-3.6.0.min.js' %}"></script>
+   <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+   <script src="{% static 'web/js/isotope.pkgd.min.js' %}"></script>
+   <script src="{% static 'web/js/imagesloaded.pkgd.min.js' %}"></script>
+   <script src="{% static 'web/js/jquery.magnific-popup.min.js' %}"></script>
+   <script src="{% static 'web/js/jquery.odometer.min.js' %}"></script>
+   <script src="{% static 'web/js/jquery.appear.js' %}"></script>
+   <script src="{% static 'web/js/swiper-bundle.min.js' %}"></script>
+   <script src="{% static 'web/js/jquery.marquee.min.js' %}"></script>
+   <script src="{% static 'web/js/tg-cursor.min.js' %}"></script>
+   <script src="{% static 'web/js/ajax-form.js' %}"></script>
+   <script src="{% static 'web/js/jquery-ui.min.js' %}"></script>
+   <script src="{% static 'web/js/svg-inject.min.js' %}"></script>
+   <script src="{% static 'web/js/tween-max.min.js' %}"></script>
+   <script src="{% static 'web/js/wow.min.js' %}"></script>
+   <script src="{% static 'web/js/aos.js' %}"></script>
+   <script src="{% static 'web/js/main.js' %}"></script>
+   <script src="{% static 'web/js/sweet.js' %}"></script>
+   <script>
+       SVGInject(document.querySelectorAll("img.injectable"));
+   </script>
+</body>
+
+</html>

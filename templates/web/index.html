@@ -1,0 +1,464 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+
+
+
+        <!-- slider-area -->
+        <section class="slider__area-two">
+            <div class="swiper slider-active-two">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider__bg-two" data-background="{% static 'web/img/slider/h3_slider_bg01.jpg' %}">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-xl-7 col-lg-7">
+                                    <div class="slider__content-two">
+                                        <span class="sub-title">Qatar's Construction Material Experts</span>
+                                        <h2 class="title">SSK Trading W.I.I Your Reliable Partner</h2>
+                                        <div class="slider__btn">
+                                            <a href="{% url 'web:products' %}" class="btn btn-two">View Our Products <img src="assets/img/icons/right_arrow.svg" alt=""  class="injectable"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__shape" data-background="{% static 'web/img/slider/slider_shape.png' %}"></div>
+                    </div>
+                    <!-- <div class="swiper-slide slider__bg-two" data-background="assets/img/slider/h3_slider_bg02.jpg">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-xl-7 col-lg-7">
+                                    <div class="slider__content-two">
+                                        <span class="sub-title">We’re working since 1985 in this field</span>
+                                        <h2 class="title">World’s Most leading building provider</h2>
+                                        <div class="slider__btn">
+                                            <a href="services.html" class="btn btn-two">View Our Services <img src="assets/img/icons/right_arrow.svg" alt=""  class="injectable"></a>
+                                            <a href="http://www.youtube.com/watch?v=1iIZeIy7TqM" class="btn popup-video">Watch Our Story <i class=" renova-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__shape" data-background="assets/img/slider/slider_shape.png"></div>
+                    </div>
+                    <div class="swiper-slide slider__bg-two" data-background="assets/img/slider/h3_slider_bg03.jpg">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-xl-7 col-lg-7">
+                                    <div class="slider__content-two">
+                                        <span class="sub-title">We’re working since 1985 in this field</span>
+                                        <h2 class="title">World’s Most leading building provider</h2>
+                                        <div class="slider__btn">
+                                            <a href="services.html" class="btn btn-two">View Our Services <img src="assets/img/icons/right_arrow.svg" alt=""  class="injectable"></a>
+                                            <a href="http://www.youtube.com/watch?v=1iIZeIy7TqM" class="btn popup-video">Watch Our Story <i class=" renova-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__shape" data-background="assets/img/slider/slider_shape.png"></div>
+                    </div>
+                    <div class="swiper-slide slider__bg-two" data-background="assets/img/slider/h3_slider_bg04.jpg">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-xl-7 col-lg-7">
+                                    <div class="slider__content-two">
+                                        <span class="sub-title">We’re working since 1985 in this field</span>
+                                        <h2 class="title">World’s Most leading building provider</h2>
+                                        <div class="slider__btn">
+                                            <a href="services.html" class="btn btn-two">View Our Services <img src="assets/img/icons/right_arrow.svg" alt=""  class="injectable"></a>
+                                            <a href="http://www.youtube.com/watch?v=1iIZeIy7TqM" class="btn popup-video">Watch Our Story <i class=" renova-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__shape" data-background="assets/img/slider/slider_shape.png"></div>
+                    </div> -->
+                </div>
+                <!-- <div class="slider__nav">
+                    <button class="slider-button-prev"><img src="assets/img/icons/long_left_arrow.svg" alt="" class="injectable"></button>
+                    <button class="slider-button-next"><img src="assets/img/icons/long_right_arrow.svg" alt="" class="injectable"></button>
+                </div> -->
+            </div>
+        </section>
+        <!-- slider-area-end -->
+
+       <!-- features-area -->
+       <section class="features__area section-pt-120 section-pb-90">
+            <div class="container">
+                <div class="row justify-content-center gutter-24">
+                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="features__item">
+                            <div class="features__icon">
+                                <i class="renova-rocket"></i>
+                            </div>
+                            <div class="features__content">
+                                <h3 class="title">Mission</h3>
+                                <p>To be the reliable supplier of choice for Qatar's construction industry, offering essential materials like PPE, hardware, tools, and consumables. SSK sources high-quality products globally and maintains ample stock through its robust financial standing, ensuring continuous supply for even the largest projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="features__item">
+                            <div class="features__icon">
+                                <i class="renova-flag"></i>
+                            </div>
+                            <div class="features__content">
+                                <h3 class="title">Vision</h3>
+                                <p>SSK aspires to become the leading name in Qatar's construction material supply. Their focus is on exceeding customer expectations with exceptional service, unwavering commitment, and top-tier products. They value honesty and respect in every interaction, fostering strong relationships with both clients and suppliers.</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+       </section>
+       <!-- features-area-end -->
+
+       <!-- about-area -->
+       <section class="about__area section-pb-120">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-9">
+                        <div class="about__img-wrap wow img-custom-anim-left animated"  data-wow-duration="1.5s" data-wow-delay="0.1s">
+                            <img src="{% static 'web/img/images/about_img.jpg' %}" alt="img">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about__content">
+                            <div class="section__title mb-20">
+                                <h2 class="title">Leading Construction Material Supplier in Qatar</h2>
+                            </div>
+                            <p>SSK Trading W.I.I. has established itself as a leading supplier of construction materials in Qatar for over a decade. We take pride in providing a comprehensive range of products, including essential PPE (Personal Protective Equipment), hardware, tools, consumables, and more. Our commitment extends beyond just supplying products; we strive to be a trusted partner for your construction projects, big or small.</p>
+                            <div class="about__list-box-wrap">
+                                <div class="about__list-box" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="icon">
+                                        <i class="renova-user-rating"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Leading Construction Supplier</h4>
+                                        <p>SSK Trading W.I.I. is a trusted supplier in Qatar's construction sector, serving major projects with quality materials for over a decade.</p>
+                                    </div>
+                                </div>
+                                <div class="about__list-box" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="icon">
+                                        <i class="renova-brick"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Quality and Service Commitment</h4>
+                                        <p>With ISO certification and a global procurement network, SSK guarantees reliable supply and prioritizes customer satisfaction through honesty and respect.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <!-- about-area-end -->
+
+       <!-- counter-area -->
+       <section class="counter__area">
+            <div class="container">
+                <div class="counter__item-wrap">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter__item">
+                                <div class="counter__icon">
+                                    <i class="renova-happy"></i>
+                                </div>
+                                <div class="counter__content">
+                                    <h3 class="count"><span class="odometer" data-count="3658"></span>+</h3>
+                                    <p>Satisfied Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter__item">
+                                <div class="counter__icon">
+                                    <i class="renova-brick"></i>
+                                </div>
+                                <div class="counter__content">
+                                    <h3 class="count"><span class="odometer" data-count="658"></span>+</h3>
+                                    <p>Modern Equipment</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter__item">
+                                <div class="counter__icon">
+                                    <i class=" renova-user-rating-2"></i>
+                                </div>
+                                <div class="counter__content">
+                                    <h3 class="count"><span class="odometer" data-count="1500"></span>+</h3>
+                                    <p>Expert Members</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter__item">
+                                <div class="counter__icon">
+                                    <i class="renova-badge"></i>
+                                </div>
+                                <div class="counter__content">
+                                    <h3 class="count"><span class="odometer" data-count="153"></span>+</h3>
+                                    <p>Tons Of Harvest</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <!-- counter-area-end -->
+
+        <section class="services__area-four grey-bg section-pt-120 section-pb-95">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section__title section__title-three mb-50">
+                            <h2 class="title">Our Organization</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutter-24">
+                    {% for item in organizations %}
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="services__item-five">
+                            <div class="services__thumb-five">
+                                {% if item.image %}
+                                <a href="javascript:void(0)"><img src="{{item.image.url}}" alt="img"></a>
+                                {% endif %}
+                            </div>
+                            <div class="services__content-five">
+                                <h6 class="title"><a href="javascript:void(0)">{{item.name}}</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="faq__area-two section-py-120">
+            <div class="container">
+                <div class="row my-auto">
+                    <div class="col-lg-8">
+                        <div class="faq__content">
+                            <div class="section__title section__title-three mb-40">
+                                <span class="sub-title">More About Us</span>
+                                <h2 class="title">Frequently Asked Questions</h2>
+                            </div>
+                            <div class="faq__wrap-two">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                01. What does SSK Trading W.I.I. specialize in?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                                            <div class="accordion-body">
+                                                <p>SSK Trading W.I.I. specializes in the supply of construction materials such as PPE (Personal Protective Equipment), hardware, tools, and consumables.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                02. How long has SSK Trading W.I.I. been operating in the Qatar market?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                                            <div class="accordion-body">
+                                               <p>SSK Trading W.I.I. has been a leading name in the Qatar market for over a decade.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                03. What types of projects does SSK Trading W.I.I. supply products to?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                                            <div class="accordion-body">
+                                                <p>SSK Trading W.I.I. supplies products to various mega projects running in Qatar, catering to both government and private infrastructure developers and contractors.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                04. Are SSK Trading W.I.I.'s products approved by regulatory bodies?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                                            <div class="accordion-body">
+                                                <p>Yes, the products supplied by SSK Trading W.I.I. are approved by most renowned consultants working in Qatar.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                05. What is the capacity of SSK Trading W.I.I.'s warehouse?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>SSK Trading W.I.I. maintains a 2000 square meters warehouse, ensuring the ideal stock of goods for continuous supply.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                06. From which countries does SSK Trading W.I.I. import its products?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>SSK Trading W.I.I. imports products from various countries, including China, India, and Pakistan.</p>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-4 m-auto">
+                        <div class="faq__sidebar my-auto">
+                           
+                            <div class="sidebar__discount">
+                                <div class="sidebar__logo">
+                                    <a href="index.html"><img src="{% static 'web/img/ext/logo.svg' %}" alt="logo"></a>
+                                </div>
+                                <h2 class="title">Need Help? We Are Here <br> To Help You</h2>
+                                <div class="sidebar__content">
+                                    <h4 class="title-two mb-4">Get In Touch</h4>
+                                    <a href="{% url 'web:contact' %}" class="btn btn-two">Get A Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       
+
+
+        <!-- work-area -->
+        <section class="work__area tg-motion-effects">
+            <div class="container">
+                <div class="work__wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="work__content">
+                                <h2 class="title">We Provide The Best Solutions For Your Business</h2>
+                                <div class="work__btn">
+                                    <a href="contact.html" class="btn btn-two">Products <img src="{% static 'web/img/icons/right_arrow.svg' %}" alt="" class="injectable"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__img-wrap">
+                        <ul class="list-wrap">
+                            <li data-aos="zoom-in" data-aos-delay="200">
+                                <img src="{% static 'web/img/images/work_img01.png' %}" alt="img" class="tg-motion-effects2">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="300">
+                                <img src="{% static 'web/img/images/work_img02.png' %}" alt="img" class="tg-motion-effects3">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="400">
+                                <img src="{% static 'web/img/images/work_img03.png' %}" alt="img" class="tg-motion-effects3">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="200">
+                                <img src="{% static 'web/img/images/work_img04.png' %}" alt="img" class="tg-motion-effects2">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="300">
+                                <img src="{% static 'web/img/images/work_img05.png' %}" alt="img" class="tg-motion-effects3">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="400">
+                                <img src="{% static 'web/img/images/work_img06.png' %}" alt="img" class="tg-motion-effects3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- work-area-end -->
+
+        <!-- blog-post-area -->
+        <section class="blog__post-area section-pt-120 section-pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="section__title mb-70">
+                            <h2 class="title">Our Latest Updates</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center gutter-24">
+                    {% for item in updates %}
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-item shine__animate-item">
+                            <div class="blog__post-thumb">
+                                <a href="{{item.get_absolute_url}}" class="shine__animate-link">
+                                    <img src="{{item.image.url}}" alt="img">
+                                </a>
+                            </div>
+                            <div class="blog__post-content">
+                                <div class="blog__post-meta">
+                                    <ul class="list-wrap">
+                                       
+                                        <li>{{item.date}}</li>
+                                    </ul>
+                                </div>
+                                <h4 class="title"><a href="{{item.get_absolute_url}}">{{item.title}}</a></h4>
+                                <a href="{{item.get_absolute_url}}" class="btn">Read Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog-post-area-end -->
+
+        <!-- brand-area -->
+        <div class="brand__area section-pb-120">
+            <div class="container">
+                <div class="swiper brand-active">
+                    <div class="swiper-wrapper">
+                        {% for item in clients %}
+                        <div class="swiper-slide">
+                            <div class="brand__item">
+                                <img src="{{item.image.url}}" alt="img">
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brand-area-end -->
+
+
+    </main>
+    <!-- main-area-end -->
+    {% endblock  %}

@@ -1,0 +1,147 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+        
+       <!-- about-area -->
+       <section class="about__area-two section-py-120">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="about__img-wrap-two">
+                            <img src="{% static 'web/img/images/inner_about01.jpg' %}" alt="img" class="wow img-custom-anim-right animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                            <img src="{% static 'web/img/images/inner_about02.jpg' %}" alt="img" class="wow img-custom-anim-left animated" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                            <img src="{% static 'web/img/images/inner_about03.jpg' %}" alt="img" class="wow img-custom-anim-top animated" data-wow-duration="1.5s" data-wow-delay="0.6s">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about__content-two">
+                            <div class="section__title section__title-three mb-25">
+                                <span class="sub-title">More About Us</span>
+                                <h2 class="title">Building Qatar's Success: About SSK Trading W.I.I</h2>
+                            </div>
+                            <p>SSK Trading W.I.I. has been a leading supplier for Qatar's construction industry for over a decade. We provide essential materials like PPE, hardware, and tools, ensuring top quality and continuous supply for all projects, from mega developments to retail needs. Our partnerships with renowned consultants and strong financial backing guarantee reliable service throughout Qatar.                            </p>
+                            <div class="experience__wrap">
+                                
+                                <div class="about__list-box-two">
+                                    <ul class="list-wrap">
+                                        <li>Building Big in Qatar: Supplying Mega Projects</li>
+                                        <li>Quality You Can Trust</li>
+                                        <li>Your Reliable Partner</li>
+                                        <li>One-Stop Shop for All Your Needs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <!-- about-area-end -->
+
+       <!-- about-area -->
+
+
+
+            <!-- about-area -->
+            <section class="about__area_three section-pb-120">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="about__content">
+                            <div class="section__title mb-20">
+                                <h2 class="title">Key Features</h2>
+                            </div>
+                            <p>Discover why SSK Trading W.I.I. stands out in Qatar's construction materials market with these distinctive attributes:</p>
+                            <div class="about__list-box-two">
+                                <ul class="list-wrap">
+                                    <li><strong>Material Range :</strong> Safety, Hardware, Tools & Consumable</li>
+                                    <li><strong>Warehouse Capacity:</strong> 2000 Sq. Mtrs</li>
+                                    <li><strong>Customer Range :</strong> Wholesale Supply to more than 300 Local Trader- as well major running projects of Qatar</li>
+                                    <li><strong>Country of Origin :</strong> China, Korea, India, Pakistan, Thailand, Malaysia, Vietnam, K.SA & UAE</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-9">
+                        <div class="about__img-wrap wow img-custom-anim-left animated"  data-wow-duration="1.5s" data-wow-delay="0.1s">
+                            <img src="{% static 'web/img/images/about_img.jpg' %}" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-area-end -->
+    
+
+        <section class="team__area pt-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="section__title section__title-three text-center mb-60">
+                            <h2 class="title">Our Curtificates</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center gutter-24 text-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="">
+                                <img class="w-75" src="{% static 'web/img/ext/curtificate1.png' %}" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="">
+                                <img class="w-75" src="{% static 'web/img/ext/curtificate2.png' %}" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="">
+                                <img class="w-75" src="{% static 'web/img/ext/curtificate3.jpg' %}" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+
+
+      <!-- brand-area -->
+      <div class="brand__area section-pb-120">
+        <div class="container">
+            <div class="swiper brand-active">
+                <div class="swiper-wrapper">
+                    {% for item in clients %}
+                    <div class="swiper-slide">
+                        <div class="brand__item">
+                            <img src="{{item.image.url}}" alt="img">
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brand-area-end -->
+
+
+    </main>
+    <!-- main-area-end -->
+
+
+
+   {% endblock %}

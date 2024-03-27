@@ -1,0 +1,102 @@
+
+{% load static %}
+
+  <!-- footer-area -->
+  <footer class="footer__area">
+    <div class="container">
+       
+        <div class="footer__top">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="footer__widget">
+                        <div class="footer__logo">
+                            <a href="index.html"><img src="{% static 'web/img/ext/logo.svg' %}" alt="logo"></a>
+                        </div>
+                        <div class="footer__content">
+                            <p>SSK Trading W.I.I. is a trusted name in Qatar's construction materials market, renowned for excellence and reliability.</p>
+                        </div>
+                        <div class="footer__social">
+                            <ul class="list-wrap">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-3 col-sm-4">
+                    <div class="footer__widget">
+                        <h4 class="footer__widget-title">Useful Links</h4>
+                        <div class="footer__widget-link">
+                            <ul class="list-wrap">
+                                <li>
+                                    <a href="/"><i class="renova-right-arrow"></i><span>Home</span></a>
+                                </li>
+                                <li>
+                                    <a href="{% url "web:about" %}"><i class="renova-right-arrow"></i><span>About Us</span></a>
+                                </li>
+                                <li>
+                                    <a href="{% url "web:products" %}"><i class="renova-right-arrow"></i><span>Products</span></a>
+                                </li>
+                                <li>
+                                    <a href="{% url "web:update" %}"><i class="renova-right-arrow"></i><span>Updates</span></a>
+                                </li>
+                                <li>
+                                    <a href="{% url "web:contact" %}"><i class="renova-right-arrow"></i><span>Contact</span></a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h4 class="footer__widget-title">Our PRODUCTS</h4>
+                        <div class="footer__widget-link">
+                            <ul class="list-wrap">
+                                {% for i in all_categories %}
+                                <li>
+                                    <a href="{% url 'web:products' %}?category={{ i.id }}"><i class="renova-right-arrow"></i><span>{{i.name}}</span></a>
+                                </li>
+                                {% endfor %}
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
+                    <div class="footer__widget">
+                        <h4 class="footer__widget-title">CONTACT</h4>
+                        <div class="footer__widget-link">
+                            <ul class="list-wrap">
+                                <li>
+                                    <a href="tel:+97470974683"><i class="renova-right-arrow"></i><span>+974 7097 4683</span></a>
+                                </li>
+                                <li>
+                                    <a href="mailto:sales@fcqataruniforms.com"><i class="renova-right-arrow"></i><span>sales@fcqataruniforms.com</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="renova-right-arrow"></i><span>Fashion Center Uniform, Tumama, Furjan Market 33 C.R. No: 121842, P.O. Box: 9044, Doha - Qatar</span></a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="copyright-text">
+                        <p>© 2024 Gedexo. All images are for demo purposes.</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer-area-end -->

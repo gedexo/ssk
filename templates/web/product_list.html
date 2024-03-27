@@ -1,0 +1,110 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+        <!-- shop-area -->
+        <section class="shop__area section-py-120">
+            <div class="container">
+                <div class="row gutter-24">
+                    <div class="col-xl-9 col-lg-8 order-0 order-lg-2">
+                       
+                        <div class="row gutter-24">
+                            {% for item in object_list %}
+                            <div class="col-xl-4 col-sm-6">
+                                <div class="shop__item">
+                                    <div class="shop__thumb">
+                                        <img src="{{item.image.url}}" alt="img">
+                                    </div>
+                                    <div class="shop__content">
+                                       
+                                        <h4 class="title"><a href="shop-details.html">{{item.name}}</a></h4>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-{{item.id}}">
+                                            Enquire Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4">
+                        <aside class="shop__sidebar">
+                           
+                            <div class="blog__widget">
+                                <h4 class="blog__widget-title">Categories</h4>
+                                <div class="blog__cat-list shop__cat-list">
+                                    <ul class="list-wrap">
+                                        {% for cat in categories %}
+                                        <li>
+                                            <a href="{% url 'web:products' %}?category={{ cat.id }}">{{cat.name}}<i class="renova-right-arrow"></i></a>
+                                        </li>
+                                        {% endfor %}
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shop-area-end -->
+
+        
+
+    </main>
+    <!-- main-area-end -->
+
+
+
+    {% for item in object_list %}
+
+    <div class="modal fade" id="exampleModal-{{item.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="ajax reload" method="POST">
+                {% csrf_token %}
+            <div class="modal-body">
+                    <input type="text" name="product" value="{{item.id}}" hidden="">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="text" name="name" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Phone Number</label>
+                        <input type="number" name="phone" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email address</label>
+                      <input type="email" name="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Message</label>
+                      <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>    
+    {% endfor %}
+    
+{% endblock %}
