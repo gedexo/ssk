@@ -11,9 +11,9 @@ class CategoryAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name','category')
     
-@admin.register(Testimonial)
-class TestimonialAdmin(admin.ModelAdmin):
-    list_display = ('name',)
+# @admin.register(Testimonial)
+# class TestimonialAdmin(admin.ModelAdmin):
+#     list_display = ('name',)
     
 @admin.register(Updates)
 class UpdatesAdmin(admin.ModelAdmin):
@@ -27,4 +27,4 @@ class ProductEnquiryAdmin(admin.ModelAdmin):
     
 admin.site.register(ClientLogo)
 admin.site.register(Contact)
-admin.site.register(Organization)
+# admin.site.register(Organization)
