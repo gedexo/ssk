@@ -140,7 +140,7 @@
                             <img src="{% static 'web/img/images/about_img.jpg' %}" alt="img">
                             <div class="about__img-content">
                                 <h4 class="title">Let’s work together</h4>
-                                <a href="contact.html" class="btn">Contact Us <img src="/static/web/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                <a href="{% url 'web:contact' %}" class="btn">Contact Us <img src="/static/web/img/icons/right_arrow.svg" alt="" class="injectable"></a>
                             </div>
                         </div>
                     </div>
@@ -267,7 +267,7 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-7">
                         <div class="section__title mb-70 pt-0">
-                            <h2 class="title">We are Expert in those industry</h2>
+                            <h2 class="title">Frequently Asked Questions</h2>
                         </div>
                     </div>
                 </div>
@@ -276,7 +276,7 @@
                         <div class="faq__img wow img-custom-anim-left animated"  data-wow-duration="1.5s" data-wow-delay="0.1s">
                             <img src="{% static 'web/img/images/faq_img.jpg' %}" alt="img">
                             <div class="faq__img-content">
-                                <h5 class="title">Leading Developer Of Commercial <br> & Residential Projects</h5>
+                                <h5 class="title">Answers to Common Queries About SSK Trading W.I.I</h5>
                             </div>
                         </div>
                     </div>
