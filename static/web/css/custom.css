@@ -9,6 +9,9 @@
 .custom-about-points li span strong{
     color: black;
 }
+.contact__info-content .content .title{
+    font-size: 20px;
+}
 
 @media (max-width: 575.98px) { 
     p{
