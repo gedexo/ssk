@@ -1,3 +1,15 @@
+.custom-about-points li span{
+    display: flex;
+    flex-direction: column;
+}
+.about-sec-coustom{
+    gap: 0px;
+    margin-left: 0;
+}
+.custom-about-points li span strong{
+    color: black;
+}
+
 @media (max-width: 575.98px) { 
     p{
         font-size: 14px;
