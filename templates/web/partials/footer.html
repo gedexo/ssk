@@ -10,7 +10,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="footer__widget">
                         <div class="footer__logo">
-                            <a href="/"><img src="{% static 'web/img/ext/logo.svg' %}" alt="logo"></a>
+                            <a href="/"><img src="{% static 'web/img/logo.svg' %}" alt="logo"></a>
                         </div>
                         <div class="footer__content">
                             <p>SSK Trading W.I.I. is a trusted name in Qatar's construction materials market, renowned for excellence and reliability.</p>
@@ -55,7 +55,7 @@
                         <h4 class="footer__widget-title">Our PRODUCTS</h4>
                         <div class="footer__widget-link">
                             <ul class="list-wrap">
-                                {% for i in all_categories %}
+                                {% for i in all_categories|slice:":5" %}
                                 <li>
                                     <a href="{% url 'web:products' %}?category={{ i.id }}"><i class="renova-right-arrow"></i><span>{{i.name}}</span></a>
                                 </li>
