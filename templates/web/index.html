@@ -177,6 +177,32 @@
        </section>
        <!-- about-area-end -->
 
+               <!-- brand-area -->
+            <div class="brand__area section-pb-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="section__title mb-70 pt-0">
+                                <h2 class="title">OUR clients</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper brand-active">
+                        <div class="swiper-wrapper">
+                            {% for item in clients %}
+                            <div class="swiper-slide">
+                                <div class="brand__item">
+                                    <img src="{{item.image.url}}" alt="img">
+                                </div>
+                            </div>
+                            {% endfor %}
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- brand-area-end -->
+
        <!-- counter-area -->
        <section class="counter__area">
             <div class="container">
@@ -231,6 +257,9 @@
             </div>
        </section>
        <!-- counter-area-end -->
+
+       
+
 
 
         <!-- faq-area -->
@@ -386,24 +415,6 @@
         </section>
         <!-- blog-post-area-end -->
 
-        <!-- brand-area -->
-        <div class="brand__area section-pb-120">
-            <div class="container">
-                <div class="swiper brand-active">
-                    <div class="swiper-wrapper">
-                        {% for item in clients %}
-                        <div class="swiper-slide">
-                            <div class="brand__item">
-                                <img src="{{item.image.url}}" alt="img">
-                            </div>
-                        </div>
-                        {% endfor %}
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- brand-area-end -->
 
 
     </main>

@@ -226,9 +226,13 @@ var brandSwiper = new Swiper('.brand-active', {
     breakpoints: {
         '1500': {
             slidesPerView: 5,
+            centeredSlides: true, // Center the slides
+
         },
         '1200': {
             slidesPerView: 5,
+            centeredSlides: true, // Center the slides
+
         },
         '992': {
             slidesPerView: 4,
