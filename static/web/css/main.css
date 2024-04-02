@@ -640,8 +640,8 @@ textarea {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: 3px solid rgba(240, 240, 240, 0.7);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -660,8 +660,8 @@ textarea {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-top: 3px solid var(--tg-theme-primary);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -685,7 +685,7 @@ textarea {
 }
 #preloader .loader .loader-icon img {
   animation: loaderpulse alternate 900ms infinite;
-  width: 40px;
+  width: 120px;
 }
 
 @keyframes loaderspin {
