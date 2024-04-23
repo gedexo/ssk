@@ -223,3 +223,19 @@
   .btn-floating.whatsapp:hover {
       background-color: #1f7a12
   }
+  @media screen and (max-width: 750px) {
+    .btn-floating {
+        right: 13px;
+        width: 35px;
+        height: 35px;
+        font-size: 12px; /* Example adjustment, modify as needed */
+
+    }
+    .btn-floating.phone{
+        bottom: 110px;
+    }
+    .btn-floating.whatsapp{
+        bottom: 65px;
+    }
+}
+
